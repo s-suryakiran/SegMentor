@@ -1,4 +1,4 @@
-# Transformavericks - Video Frame Prediction + Segmentation
+# SegMentor - Video Frame Prediction + Segmentation
 
 # Instructions to reproduce our results
 
