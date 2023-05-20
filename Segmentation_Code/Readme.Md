@@ -17,6 +17,11 @@ Download Dataset_Student_V2.zip and place in this folder where this Readme.Md ex
 unzip Dataset_Student_V2.zip <br>
 once extracted open jupyter notebook named Data_formatting_for_segmentation.ipynb and run all cells, this will create dataset in required format for training and testing.<br>
 
+# Downloading pretrained models
+
+1. download the good_deeplabv3plus_final_scaled.pth from https://drive.google.com/file/d/1Ha5PhDKyRnmn2VVItakO_bqc_ZxOcyA2/view?usp=share_link and place it in Segmentation_Code/
+2. download resnet50_best_model.pth from https://drive.google.com/file/d/1qmB886DxVOqohRv_3PtorVK0yReMZ198/view?usp=share_link and place it in Segmentation_Code/
+
 # To train Resnet
 
 python3 train_resnet_on_shapes_dataset.py --train ./Dataset_Student/train/ --val ./Dataset_Student/val
