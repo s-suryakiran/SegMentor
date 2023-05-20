@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: SimVP
+Version: 0.1.0
+Summary: SimVP: Towards Simple yet Powerful Spatiotemporal Predictive learning
+Home-page: https://github.com/chengtan9907/SimVPv2
+Author: CAIRI Westlake University Contributors
+Author-email: lisiyuan@westlake.edu.com
+License: Apache License 2.0
+Keywords: video prediction,unsupervised spatiotemporal learning
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: tests
+
+# Transformavericks - Video Frame Prediction+Segmentation
+> Sample output of our work-
+
+![alt text](images/test.gif)
+
+# Commands to execute
+
+1) apt-get install unzip
+2) pip install -r requirements.txt
+3) pip install opencv-python gdown
+4) apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+5) python setup.py develop
+**!!IMPORTANT!! Please go through [this notebook](./Download%20Large%20Files.ipynb) to download the dataset and all related files.**
+# To train
+ python tools/train.py -d shapes -m SimVP --model_type moga -c configs/mmnist/simvp/SimVP_MogaNet.py --ex_name shapes_simvp_moga
+ 
+# To test 
+python tools/test.py -d shapes -m SimVP --model_type moga -c configs/mmnist/simvp/SimVP_MogaNet.py --ex_name shapes_simvp_moga --testdir ./Dataset_Student/val
+
+# Results
+
+![alt text](images/MAE.png)
+![alt text](images/MSE.png)
+![alt text](images/trainloss.png)
+![alt text](images/valloss.png)

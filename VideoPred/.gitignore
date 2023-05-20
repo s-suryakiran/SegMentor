@@ -1,0 +1,13 @@
+Dataset_Student_V2.zip
+*.npy
+Dataset_Student/
+results/*
+hidden_set_for_leaderboard_1.zip
+hidden
+val_outputs/
+val_outputs
+val_outputs/*
+results.zip
+*.zip
+
+
