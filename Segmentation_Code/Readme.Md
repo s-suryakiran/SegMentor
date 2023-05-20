@@ -13,7 +13,7 @@
 
 # Dataset Prepartion
 
-Download Dataset_Student_V2.zip and place in this folder where this Readme.Md exists. <br>
+Download Dataset_Student_V2.zip from https://drive.google.com/file/d/1LtXZWWYoeRwwlUkJHe8cA-9OA7OC5K88/view?usp=share_link and place in this folder where this Readme.Md exists. <br>
 unzip Dataset_Student_V2.zip <br>
 once extracted open jupyter notebook named Data_formatting_for_segmentation.ipynb and run all cells, this will create dataset in required format for training and testing.<br>
 
